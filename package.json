@@ -1,0 +1,32 @@
+{
+  "name": "dsh-destinywind-userplugins",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "在设置的「内置插件」页新增「用户插件」标签页，单独显示用户安装的插件，每张卡片只有启用/停用开关和卸载按钮。",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  }
+}

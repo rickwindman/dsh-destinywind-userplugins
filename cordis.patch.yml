@@ -1,0 +1,4 @@
+- insert:
+    - id: destinywind-userplugins
+      name: dsh-destinywind-userplugins
+      config: {}
