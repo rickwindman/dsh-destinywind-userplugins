@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "User Plugins View",
+    "description": "Adds a \"User Plugins\" tab to the settings plugin page, listing user-installed plugins with only an enable/disable toggle and an uninstall button per card."
+  }
+}
